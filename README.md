@@ -1,105 +1,100 @@
-<<<<<<< HEAD
-# Email / SMS Spam Classifier
+# Email or SMS Spam Detection
 
-A Streamlit web application that classifies messages as Spam or Legitimate (Ham)
-using a Multinomial Naive Bayes model trained on TF-IDF features.
+A machine learning web application that detects spam messages in emails and SMS using Natural Language Processing (NLP), TF-IDF vectorization, and a Multinomial Naive Bayes classifier.
 
----
+## What is Spam Detection?
+
+Spam detection is the process of identifying unwanted, irrelevant, or potentially fraudulent messages. Spam messages may contain misleading advertisements, phishing links, suspicious offers, or scams.
+
+This project uses machine learning to analyze message text and classify it as **Spam** or **Not Spam (Ham)** through a simple web interface.
+
+## What Are the Goals?
+
+The main objectives of this project are:
+
+1. Detect spam and legitimate messages automatically.
+2. Apply Natural Language Processing techniques to clean and process text.
+3. Convert text into numerical features using TF-IDF vectorization.
+4. Use a trained Multinomial Naive Bayes classifier to predict message categories.
+5. Provide an interactive web application for real-time message classification.
+
+## Why Did I Choose This Project?
+
+Spam messages are a common problem in digital communication. They can waste time, distribute misleading information, and expose users to phishing attempts or fraudulent offers.
+
+This project demonstrates how machine learning and NLP can be applied to a practical text-classification problem. It also provides hands-on experience with text preprocessing, model training, prediction, and web application development.
+
+## Features
+
+- **Spam Classification:** Predict whether a message is Spam or Not Spam (Ham).
+- **Text Preprocessing:** Clean and normalize message text before prediction.
+- **TF-IDF Vectorization:** Convert text into numerical features for machine learning.
+- **Machine Learning Model:** Use a trained Multinomial Naive Bayes classifier.
+- **Interactive Web Interface:** Enter a message and view its predicted category.
+- **Pre-trained Model:** Load the saved classifier and vectorizer without retraining every time.
+- **Jupyter Notebook:** Explore the model development and analysis workflow.
+
+## Tools and Technologies
+
+- Python
+- Streamlit
+- Scikit-learn
+- NLTK
+- Pandas
+- NumPy
+- TF-IDF Vectorization
+- Multinomial Naive Bayes
+- Jupyter Notebook
+- Git and GitHub
+
+## How Does It Work?
+
+1. **Input:** The user enters an email or SMS message.
+2. **Preprocessing:** The text is cleaned and normalized.
+3. **Feature Extraction:** The TF-IDF vectorizer converts the processed text into numerical features.
+4. **Prediction:** The trained Multinomial Naive Bayes model classifies the message.
+5. **Output:** The application displays the predicted category.
 
 ## Project Structure
 
-```
-spam_detector/
-├── app.py                   Main Streamlit application
-├── model.pkl                Pre-trained MultinomialNB classifier
-├── vectorizer.pkl           Pre-fitted TF-IDF vectorizer
-├── requirements.txt         Python dependencies
-├── .gitignore
-├── README.md
-└── assets/
-    ├── style.css            Custom theme stylesheet
-    └── favicon.png          Browser tab icon
-```
-
----
-
-## How to Run in VS Code (localhost)
-
-### Step 1 — Open the project folder in VS Code
-
-```
-File → Open Folder → select the spam_detector folder
+```text
+Email-or-SMS-Spam-Detection/
+│
+├── app.py                  # Main Streamlit application
+├── model.pkl               # Trained classification model
+├── vectorizer.pkl          # Saved TF-IDF vectorizer
+├── requirements.txt        # Python dependencies
+├── spam-detection.ipynb    # Jupyter Notebook
+├── spam-detection.pdf      # Project report
+├── dataset/                # Dataset files
+├── style.css               # Custom styling
+├── favicon.png             # Application icon
+├── README.md               # Project documentation
+└── .gitignore              # Git ignore rules
 ```
 
-### Step 2 — Open the integrated terminal
+## Application Preview
 
-```
-View → Terminal   (or press  Ctrl + ` )
-```
+### 1. Application Interface
 
-### Step 3 — Create a virtual environment
+![Spam Detection Application Interface](assets/spam-detection-1.png)
 
-Windows (PowerShell):
-```powershell
-python -m venv venv
-venv\Scripts\Activate.ps1
-```
+### 2. Spam Message Prediction
 
-macOS / Linux:
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+![Spam Message Prediction Result](assets/spam-detection-2.png)
 
-You should see (venv) at the start of your terminal prompt.
+### 3. Not Spam Message Prediction
 
-### Step 4 — Install dependencies
+![Not Spam Message Prediction Result](assets/spam-detection-3.png)
 
-```bash
-pip install -r requirements.txt
-```
+## Future Improvements
 
-IMPORTANT: requirements.txt pins scikit-learn==1.3.0 because the .pkl model
-files were saved with that version. Using a different version may cause errors.
+- Deploy the application online for public access.
+- Improve model performance through additional evaluation and experimentation.
+- Add detailed prediction metrics and model evaluation visualizations.
+- Enhance the user interface and support additional text formats.
+- Explore more advanced NLP and machine learning techniques.
 
-### Step 5 — Run the application
+## Conclusion
 
-```bash
-streamlit run app.py
-```
-
-Streamlit will print a URL in the terminal:
-
-  Local URL:  http://localhost:8501
-
-Open that address in your browser.
-
----
-
-## Deploying to Streamlit Cloud (free public URL)
-
-1. Push the project to a GitHub repository (public or private).
-2. Go to https://share.streamlit.io and sign in with GitHub.
-3. Click "New app" and select your repository and branch.
-4. Set the main file path to: app.py
-5. Click "Deploy". Your app will be live at a public URL in a few minutes.
-
----
-
-## Troubleshooting
-
-| Error | Solution |
-|---|---|
-| ModuleNotFoundError: streamlit | Activate the venv and run pip install -r requirements.txt |
-| FileNotFoundError: vectorizer.pkl | Ensure model.pkl and vectorizer.pkl are in the same folder as app.py |
-| NLTK LookupError | The app downloads punkt and stopwords automatically on first run |
-| scikit-learn version warning | Pin with: pip install scikit-learn==1.3.0 |
-| PowerShell execution policy error | Run: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned |
-
----
-
-Developed by Sarat Banik — https://www.linkedin.com/in/saratbanik
-=======
-# Email-or-SMS-Spam-Detection
-An NLP-powered web app that classifies email and SMS messages as spam or legitimate using a Multinomial Naive Bayes classifier trained on TF-IDF features.
->>>>>>> 52371ce193c3d11d4e49bf3919325fb99a3cefe0
+This project demonstrates the practical use of machine learning and NLP for detecting unwanted messages. By combining TF-IDF feature extraction, Multinomial Naive Bayes, and Streamlit, it provides a simple and interactive spam classification application.
