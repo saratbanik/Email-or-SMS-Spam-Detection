@@ -18,9 +18,3 @@ spam_detector/
 └── assets/
     ├── style.css            Custom theme stylesheet
     └── favicon.png          Browser tab icon
-```
-
-Developed by Sarat Banik — https://www.linkedin.com/in/saratbanik
-=======
-# Email-or-SMS-Spam-Detection
-An NLP-powered web app that classifies email and SMS messages as spam or legitimate using a Multinomial Naive Bayes classifier trained on TF-IDF features.
