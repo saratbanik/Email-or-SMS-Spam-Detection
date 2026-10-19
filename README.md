@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Email / SMS Spam Classifier
 
 A Streamlit web application that classifies messages as Spam or Legitimate (Ham)
@@ -98,3 +99,7 @@ Open that address in your browser.
 ---
 
 Developed by Sarat Banik — https://www.linkedin.com/in/saratbanik
+=======
+# Email-or-SMS-Spam-Detection
+An NLP-powered web app that classifies email and SMS messages as spam or legitimate using a Multinomial Naive Bayes classifier trained on TF-IDF features.
+>>>>>>> 52371ce193c3d11d4e49bf3919325fb99a3cefe0
