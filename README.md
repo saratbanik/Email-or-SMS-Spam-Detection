@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Email / SMS Spam Classifier
 
 A Streamlit web application that classifies messages as Spam or Legitimate (Ham)
