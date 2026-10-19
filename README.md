@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Email or SMS Spam Detection
 =======
 # Email / SMS Spam Classifier
