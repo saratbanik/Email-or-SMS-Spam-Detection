@@ -1,6 +1,4 @@
 # Email or SMS Spam Detection
-=======
-# Email / SMS Spam Classifier
 
 
 A machine learning web application that detects spam messages in emails and SMS using Natural Language Processing (NLP), TF-IDF vectorization, and a Multinomial Naive Bayes classifier.
