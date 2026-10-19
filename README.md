@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Email or SMS Spam Detection
+=======
+# Email / SMS Spam Classifier
+>>>>>>> a6559d825784912e236686dc63653238fd1aba90
 
 A machine learning web application that detects spam messages in emails and SMS using Natural Language Processing (NLP), TF-IDF vectorization, and a Multinomial Naive Bayes classifier.
 
@@ -57,6 +61,7 @@ This project demonstrates how machine learning and NLP can be applied to a pract
 
 ## Project Structure
 
+<<<<<<< HEAD
 ```text
 Email-or-SMS-Spam-Detection/
 │
@@ -98,3 +103,16 @@ Email-or-SMS-Spam-Detection/
 ## Conclusion
 
 This project demonstrates the practical use of machine learning and NLP for detecting unwanted messages. By combining TF-IDF feature extraction, Multinomial Naive Bayes, and Streamlit, it provides a simple and interactive spam classification application.
+=======
+```
+spam_detector/
+├── app.py                   Main Streamlit application
+├── model.pkl                Pre-trained MultinomialNB classifier
+├── vectorizer.pkl           Pre-fitted TF-IDF vectorizer
+├── requirements.txt         Python dependencies
+├── .gitignore
+├── README.md
+└── assets/
+    ├── style.css            Custom theme stylesheet
+    └── favicon.png          Browser tab icon
+>>>>>>> a6559d825784912e236686dc63653238fd1aba90
