@@ -100,7 +100,6 @@ Email-or-SMS-Spam-Detection/
 ## Conclusion
 
 This project demonstrates the practical use of machine learning and NLP for detecting unwanted messages. By combining TF-IDF feature extraction, Multinomial Naive Bayes, and Streamlit, it provides a simple and interactive spam classification application.
-=======
 
 ---
 
